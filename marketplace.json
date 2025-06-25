@@ -3,20 +3,20 @@
     "id": "codestation-py-formatter",
     "name": "Python Black Formatter",
     "author": "CodeStation Community",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A simple plugin to format Python files using the 'black' code formatter. Right-click on a Python tool to use it.",
     "icon_url": "https://raw.githubusercontent.com/psf/black/main/docs/_static/logo.png",
-    "download_url": "https://github.com/CodeStation-Tools/codestation-py-formatter/releases/download/v1.0.1/codestation-py-formatter.zip",
+    "download_url": "https://github.com/CodeStation-Tools/codestation-py-formatter/releases/download/v1.0.2/python-formatter-plugin.zip",
     "tags": ["python", "formatter", "black"]
   },
   {
     "id": "codestation-json-viewer",
     "name": "JSON Tool Viewer",
     "author": "CodeStation Community",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Adds a context menu action to view any '.json' file in a formatted, readable way inside CodeStation.",
     "icon_url": "https://raw.githubusercontent.com/CodeStation-Tools/codestation-json-viewer/main/icon.png",
-    "download_url": "https://github.com/CodeStation-Tools/codestation-json-viewer/releases/download/v1.0.1/codestation-json-viewer.zip",
+    "download_url": "https://github.com/CodeStation-Tools/codestation-json-viewer/releases/download/v1.0.2/json-viewer-plugin.zip",
     "tags": ["json", "viewer", "tool"]
   }
 ]
