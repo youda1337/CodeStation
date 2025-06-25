@@ -1,22 +1,82 @@
 [
   {
-    "id": "codestation-py-formatter",
-    "name": "Python Black Formatter",
-    "author": "CodeStation Community",
-    "version": "1.0.2",
-    "description": "A simple plugin to format Python files using the 'black' code formatter. Right-click on a Python tool to use it.",
-    "icon_url": "https://raw.githubusercontent.com/psf/black/main/docs/_static/logo.png",
-    "download_url": "https://github.com/CodeStation-Tools/codestation-py-formatter/releases/download/v1.0.2/python-formatter-plugin.zip",
-    "tags": ["python", "formatter", "black"]
+    "id": "prettier-code-formatter",
+    "name": "Prettier - Code Formatter",
+    "author": "Prettier",
+    "version": "10.4.0",
+    "description": "An opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules.",
+    "icon_url": "https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-icon-light.png",
+    "download_url": "https://github.com/prettier/prettier-vscode/archive/refs/heads/main.zip",
+    "tags": ["formatter", "javascript", "typescript", "css", "html"]
   },
   {
-    "id": "codestation-json-viewer",
-    "name": "JSON Tool Viewer",
-    "author": "CodeStation Community",
-    "version": "1.0.2",
-    "description": "Adds a context menu action to view any '.json' file in a formatted, readable way inside CodeStation.",
-    "icon_url": "https://raw.githubusercontent.com/CodeStation-Tools/codestation-json-viewer/main/icon.png",
-    "download_url": "https://github.com/CodeStation-Tools/codestation-json-viewer/releases/download/v1.0.2/json-viewer-plugin.zip",
-    "tags": ["json", "viewer", "tool"]
+    "id": "ms-python-intellisense",
+    "name": "Python IntelliSense (Pylance)",
+    "author": "Microsoft",
+    "version": "2024.6.1",
+    "description": "Provides rich support for the Python language, including features such as IntelliSense, linting, debugging, and code navigation.",
+    "icon_url": "https://raw.githubusercontent.com/microsoft/vscode-python/main/images/python-logo.png",
+    "download_url": "https://github.com/microsoft/vscode-python/archive/refs/heads/main.zip",
+    "tags": ["python", "linter", "intellisense", "debugging"]
+  },
+  {
+    "id": "eslint-linter",
+    "name": "ESLint",
+    "author": "Microsoft",
+    "version": "3.0.12",
+    "description": "Integrates ESLint JavaScript linter into your workspace. Finds and fixes problems in your JavaScript code.",
+    "icon_url": "https://raw.githubusercontent.com/eslint/eslint.org/main/src/assets/img/logo.svg",
+    "download_url": "https://github.com/microsoft/vscode-eslint/archive/refs/heads/main.zip",
+    "tags": ["javascript", "linter", "typescript"]
+  },
+  {
+    "id": "gitlens-supercharge",
+    "name": "GitLens — Git supercharged",
+    "author": "GitKraken",
+    "version": "15.0.0",
+    "description": "Supercharge the Git capabilities built into CodeStation. Visualize code authorship at a glance via Git blame annotations and code lens.",
+    "icon_url": "https://raw.githubusercontent.com/gitkraken/vscode-gitlens/main/images/icon.png",
+    "download_url": "https://github.com/gitkraken/vscode-gitlens/archive/refs/heads/main.zip",
+    "tags": ["git", "history", "blame"]
+  },
+  {
+    "id": "docker-integration",
+    "name": "Docker",
+    "author": "Microsoft",
+    "version": "1.29.1",
+    "description": "Makes it easy to create, manage, and debug containerized applications.",
+    "icon_url": "https://raw.githubusercontent.com/docker/docker.github.io/master/public/images/docs@2x.png",
+    "download_url": "https://github.com/microsoft/vscode-docker/archive/refs/heads/main.zip",
+    "tags": ["docker", "containers"]
+  },
+  {
+    "id": "live-server",
+    "name": "Live Server",
+    "author": "Ritwick Dey",
+    "version": "5.7.9",
+    "description": "Launch a development local Server with live reload feature for static & dynamic pages.",
+    "icon_url": "https://raw.githubusercontent.com/ritwickdey/vscode-live-server/master/images/icon.png",
+    "download_url": "https://github.com/ritwickdey/vscode-live-server/archive/refs/heads/master.zip",
+    "tags": ["web", "server", "http", "html"]
+  },
+  {
+    "id": "markdown-all-in-one",
+    "name": "Markdown All in One",
+    "author": "yzhang",
+    "version": "3.6.2",
+    "description": "All you need for Markdown (keyboard shortcuts, table of contents, auto preview and more).",
+    "icon_url": "https://raw.githubusercontent.com/yzhang-gh/vscode-markdown/master/images/icon.png",
+    "download_url": "https://github.com/yzhang-gh/vscode-markdown/archive/refs/heads/master.zip",
+    "tags": ["markdown", "notes", "editor"]
+  },
+  {
+    "id": "black-formatter",
+    "name": "Black Formatter",
+    "author": "Microsoft",
+    "version": "2023.4.1",
+    "description": "Formatting support for Python files using the 'black' formatter.",
+    "icon_url": "https://raw.githubusercontent.com/psf/black/main/docs/_static/logo.png",
+    "download_url": "https://github.com/microsoft/vscode-black-formatter/archive/refs/heads/main.zip",
+    "tags": ["python", "formatter"]
   }
 ]
