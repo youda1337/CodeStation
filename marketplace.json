@@ -6,7 +6,7 @@
     "version": "1.0.0",
     "description": "A simple plugin to format Python files using the 'black' code formatter. Right-click on a Python tool to use it.",
     "icon_url": "https://raw.githubusercontent.com/psf/black/main/docs/_static/logo.png",
-    "download_url": "https://github.com/CodeStation-Tools/codestation-py-formatter/archive/refs/heads/main.zip",
+    "download_url": "https://github.com/CodeStation-Tools/codestation-py-formatter/archive/main.zip",
     "tags": ["python", "formatter", "black"]
   },
   {
@@ -16,7 +16,7 @@
     "version": "1.0.0",
     "description": "Adds a context menu action to view any '.json' file in a formatted, readable way inside CodeStation.",
     "icon_url": "https://raw.githubusercontent.com/CodeStation-Tools/codestation-json-viewer/main/icon.png",
-    "download_url": "https://github.com/CodeStation-Tools/codestation-json-viewer/archive/refs/heads/main.zip",
+    "download_url": "https://github.com/CodeStation-Tools/codestation-json-viewer/archive/main.zip",
     "tags": ["json", "viewer", "tool"]
   }
 ]
