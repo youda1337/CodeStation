@@ -1,82 +1,942 @@
 [
-  {
-    "id": "prettier-code-formatter",
-    "name": "Prettier - Code Formatter",
-    "author": "Prettier",
-    "version": "10.4.0",
-    "description": "An opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules.",
-    "icon_url": "https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-icon-light.png",
-    "download_url": "https://github.com/prettier/prettier-vscode/archive/refs/heads/main.zip",
-    "tags": ["formatter", "javascript", "typescript", "css", "html"]
-  },
-  {
-    "id": "ms-python-intellisense",
-    "name": "Python IntelliSense (Pylance)",
-    "author": "Microsoft",
-    "version": "2024.6.1",
-    "description": "Provides rich support for the Python language, including features such as IntelliSense, linting, debugging, and code navigation.",
-    "icon_url": "https://raw.githubusercontent.com/microsoft/vscode-python/main/images/python-logo.png",
-    "download_url": "https://github.com/microsoft/vscode-python/archive/refs/heads/main.zip",
-    "tags": ["python", "linter", "intellisense", "debugging"]
-  },
-  {
-    "id": "eslint-linter",
-    "name": "ESLint",
-    "author": "Microsoft",
-    "version": "3.0.12",
-    "description": "Integrates ESLint JavaScript linter into your workspace. Finds and fixes problems in your JavaScript code.",
-    "icon_url": "https://raw.githubusercontent.com/eslint/eslint.org/main/src/assets/img/logo.svg",
-    "download_url": "https://github.com/microsoft/vscode-eslint/archive/refs/heads/main.zip",
-    "tags": ["javascript", "linter", "typescript"]
-  },
-  {
-    "id": "gitlens-supercharge",
-    "name": "GitLens — Git supercharged",
-    "author": "GitKraken",
-    "version": "15.0.0",
-    "description": "Supercharge the Git capabilities built into CodeStation. Visualize code authorship at a glance via Git blame annotations and code lens.",
-    "icon_url": "https://raw.githubusercontent.com/gitkraken/vscode-gitlens/main/images/icon.png",
-    "download_url": "https://github.com/gitkraken/vscode-gitlens/archive/refs/heads/main.zip",
-    "tags": ["git", "history", "blame"]
-  },
-  {
-    "id": "docker-integration",
-    "name": "Docker",
-    "author": "Microsoft",
-    "version": "1.29.1",
-    "description": "Makes it easy to create, manage, and debug containerized applications.",
-    "icon_url": "https://raw.githubusercontent.com/docker/docker.github.io/master/public/images/docs@2x.png",
-    "download_url": "https://github.com/microsoft/vscode-docker/archive/refs/heads/main.zip",
-    "tags": ["docker", "containers"]
-  },
-  {
-    "id": "live-server",
-    "name": "Live Server",
-    "author": "Ritwick Dey",
-    "version": "5.7.9",
-    "description": "Launch a development local Server with live reload feature for static & dynamic pages.",
-    "icon_url": "https://raw.githubusercontent.com/ritwickdey/vscode-live-server/master/images/icon.png",
-    "download_url": "https://github.com/ritwickdey/vscode-live-server/archive/refs/heads/master.zip",
-    "tags": ["web", "server", "http", "html"]
-  },
-  {
-    "id": "markdown-all-in-one",
-    "name": "Markdown All in One",
-    "author": "yzhang",
-    "version": "3.6.2",
-    "description": "All you need for Markdown (keyboard shortcuts, table of contents, auto preview and more).",
-    "icon_url": "https://raw.githubusercontent.com/yzhang-gh/vscode-markdown/master/images/icon.png",
-    "download_url": "https://github.com/yzhang-gh/vscode-markdown/archive/refs/heads/master.zip",
-    "tags": ["markdown", "notes", "editor"]
-  },
-  {
-    "id": "black-formatter",
-    "name": "Black Formatter",
-    "author": "Microsoft",
-    "version": "2023.4.1",
-    "description": "Formatting support for Python files using the 'black' formatter.",
-    "icon_url": "https://raw.githubusercontent.com/psf/black/main/docs/_static/logo.png",
-    "download_url": "https://github.com/microsoft/vscode-black-formatter/archive/refs/heads/main.zip",
-    "tags": ["python", "formatter"]
-  }
+    {
+        "id": "vscode.python",
+        "name": "Python IntelliSense",
+        "author": "Microsoft",
+        "version": "2024.8.1",
+        "description": "IntelliSense (Pylance), Linting, Debugging (multi-threaded, remote), Jupyter Notebooks, code formatting, refactoring, unit tests, and more.",
+        "download_url": "https://github.com/microsoft/vscode-python/releases/download/v2024.8.1/ms-python-release.vsix",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "dev-tools.docker-explorer",
+        "name": "Docker Explorer",
+        "author": "DevTools Inc.",
+        "version": "1.5.2",
+        "description": "Manage Docker containers, images, volumes, and networks directly from CodeStation.",
+        "download_url": "https://github.com/devtools-inc/docker-explorer/releases/download/v1.5.2/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.react-snippets",
+        "name": "React Snippet Pack",
+        "author": "Web Wizards",
+        "version": "2.1.0",
+        "description": "A comprehensive collection of React, Redux, and GraphQL snippets for faster development.",
+        "download_url": "https://github.com/web-wizards/react-snippets/releases/download/v2.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "data-gurus.jupyter-power-tools",
+        "name": "Jupyter Power Tools",
+        "author": "Data Gurus",
+        "version": "3.0.1",
+        "description": "Enhance your Jupyter experience with variable explorers, cell timing, and presentation mode.",
+        "download_url": "https://github.com/data-gurus/jupyter-power-tools/releases/download/v3.0.1/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "cloud-ninjas.terraform-linter",
+        "name": "Terraform Linter",
+        "author": "Cloud Ninjas",
+        "version": "1.8.0",
+        "description": "Provides real-time linting and validation for your Terraform files (HCL).",
+        "download_url": "https://github.com/cloud-ninjas/terraform-linter/releases/download/v1.8.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "util-masters.json-yaml-converter",
+        "name": "JSON & YAML Converter",
+        "author": "Util Masters",
+        "version": "1.2.0",
+        "description": "Easily convert files between JSON and YAML formats with a single click.",
+        "download_url": "https://github.com/util-masters/json-yaml-converter/releases/download/v1.2.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "db-pros.sql-client",
+        "name": "Simple SQL Client",
+        "author": "DB Pros",
+        "version": "2.4.5",
+        "description": "Connect to PostgreSQL, MySQL, and SQLite databases. Run queries and view results.",
+        "download_url": "https://github.com/db-pros/sql-client/releases/download/v2.4.5/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "git-tools.gitlens-lite",
+        "name": "GitLens Lite",
+        "author": "Git Tools",
+        "version": "0.9.0",
+        "description": "View Git blame, history, and file changes inline. Inspired by GitLens.",
+        "download_url": "https://github.com/git-tools/gitlens-lite/releases/download/v0.9.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "code-formatters.prettier-runner",
+        "name": "Prettier Runner",
+        "author": "Code Formatters",
+        "version": "3.1.0",
+        "description": "Run Prettier code formatter on your files to ensure consistent styling.",
+        "download_url": "https://github.com/code-formatters/prettier-runner/releases/download/v3.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "api-heroes.rest-client",
+        "name": "REST Client",
+        "author": "API Heroes",
+        "version": "1.6.3",
+        "description": "Send HTTP/S requests and view the response directly in CodeStation.",
+        "download_url": "https://github.com/api-heroes/rest-client/releases/download/v1.6.3/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "dev-tools.kubernetes-lens",
+        "name": "Kubernetes Lens",
+        "author": "DevTools Inc.",
+        "version": "1.2.0",
+        "description": "Visualize and manage your Kubernetes clusters. View pods, services, and deployments.",
+        "download_url": "https://github.com/devtools-inc/kubernetes-lens/releases/download/v1.2.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.vue-essentials",
+        "name": "Vue Essentials",
+        "author": "Web Wizards",
+        "version": "1.5.0",
+        "description": "Syntax highlighting, snippets, and formatting for Vue.js projects.",
+        "download_url": "https://github.com/web-wizards/vue-essentials/releases/download/v1.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "data-gurus.csv-viewer",
+        "name": "Advanced CSV Viewer",
+        "author": "Data Gurus",
+        "version": "2.2.1",
+        "description": "View and filter large CSV files with a powerful and fast data grid.",
+        "download_url": "https://github.com/data-gurus/csv-viewer/releases/download/v2.2.1/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "cloud-ninjas.aws-s3-explorer",
+        "name": "AWS S3 Explorer",
+        "author": "Cloud Ninjas",
+        "version": "2.0.0",
+        "description": "Browse, upload, and download files from your AWS S3 buckets.",
+        "download_url": "https://github.com/cloud-ninjas/aws-s3-explorer/releases/download/v2.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "util-masters.regex-tester",
+        "name": "Regex Tester",
+        "author": "Util Masters",
+        "version": "1.4.0",
+        "description": "A real-time regular expression tester with syntax highlighting and explanations.",
+        "download_url": "https://github.com/util-masters/regex-tester/releases/download/v1.4.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "db-pros.mongodb-browser",
+        "name": "MongoDB Browser",
+        "author": "DB Pros",
+        "version": "1.3.2",
+        "description": "Connect to MongoDB instances and browse your collections and documents.",
+        "download_url": "https://github.com/db-pros/mongodb-browser/releases/download/v1.3.2/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "git-tools.git-graph",
+        "name": "Git Graph",
+        "author": "Git Tools",
+        "version": "1.30.0",
+        "description": "View a beautiful and interactive graph of your Git repository history.",
+        "download_url": "https://github.com/git-tools/git-graph/releases/download/v1.30.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "code-formatters.python-black",
+        "name": "Python Black Formatter",
+        "author": "Code Formatters",
+        "version": "2.0.1",
+        "description": "The uncompromising Python code formatter. Runs 'black' on your Python files.",
+        "download_url": "https://github.com/code-formatters/python-black/releases/download/v2.0.1/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "api-heroes.graphql-client",
+        "name": "GraphQL Client",
+        "author": "API Heroes",
+        "version": "1.1.0",
+        "description": "Execute GraphQL queries, mutations, and explore schemas with autocompletion.",
+        "download_url": "https://github.com/api-heroes/graphql-client/releases/download/v1.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "prod-boost.markdown-notes",
+        "name": "Markdown Notes",
+        "author": "Productivity Boost",
+        "version": "1.8.2",
+        "description": "A simple but powerful note-taking tool with Markdown preview and tagging.",
+        "download_url": "https://github.com/prod-boost/markdown-notes/releases/download/v1.8.2/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.live-server",
+        "name": "Live Server",
+        "author": "Web Wizards",
+        "version": "5.7.9",
+        "description": "Launch a local development server with live reload for static & dynamic pages.",
+        "download_url": "https://github.com/web-wizards/live-server/releases/download/v5.7.9/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "data-gurus.plot-viewer",
+        "name": "Plot Viewer",
+        "author": "Data Gurus",
+        "version": "1.1.0",
+        "description": "View and interact with plots generated by Matplotlib, Plotly, and Seaborn.",
+        "download_url": "https://github.com/data-gurus/plot-viewer/releases/download/v1.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "cloud-ninjas.azure-storage-explorer",
+        "name": "Azure Storage Explorer",
+        "author": "Cloud Ninjas",
+        "version": "1.5.0",
+        "description": "Browse and manage your Azure Blob Storage containers and files.",
+        "download_url": "https://github.com/cloud-ninjas/azure-storage-explorer/releases/download/v1.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "util-masters.ascii-art-generator",
+        "name": "ASCII Art Generator",
+        "author": "Util Masters",
+        "version": "1.0.0",
+        "description": "Convert images to ASCII art for your terminal readmes and comments.",
+        "download_url": "https://github.com/util-masters/ascii-art-generator/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "db-pros.redis-client",
+        "name": "Redis Client",
+        "author": "DB Pros",
+        "version": "1.2.1",
+        "description": "A simple client to interact with your Redis server. View keys and run commands.",
+        "download_url": "https://github.com/db-pros/redis-client/releases/download/v1.2.1/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "lang-tools.go-linter",
+        "name": "Go Linter",
+        "author": "Language Tools",
+        "version": "1.18.0",
+        "description": "Provides linting for Go source files using golangci-lint.",
+        "download_url": "https://github.com/lang-tools/go-linter/releases/download/v1.18.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "lang-tools.rust-analyzer-bridge",
+        "name": "Rust Analyzer Bridge",
+        "author": "Language Tools",
+        "version": "0.4.0",
+        "description": "Integrates with the rust-analyzer language server for advanced features.",
+        "download_url": "https://github.com/lang-tools/rust-analyzer-bridge/releases/download/v0.4.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "prod-boost.kanban-board",
+        "name": "Kanban Board",
+        "author": "Productivity Boost",
+        "version": "1.3.0",
+        "description": "A simple, local Kanban board to track your tasks and projects.",
+        "download_url": "https://github.com/prod-boost/kanban-board/releases/download/v1.3.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.tailwind-intellisense",
+        "name": "Tailwind CSS IntelliSense",
+        "author": "Web Wizards",
+        "version": "0.9.11",
+        "description": "Autocompletion, syntax highlighting, and linting for Tailwind CSS.",
+        "download_url": "https://github.com/web-wizards/tailwind-intellisense/releases/download/v0.9.11/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "cloud-ninjas.gcp-bucket-browser",
+        "name": "GCP Bucket Browser",
+        "author": "Cloud Ninjas",
+        "version": "1.2.0",
+        "description": "A tool to browse and manage your Google Cloud Storage buckets.",
+        "download_url": "https://github.com/cloud-ninjas/gcp-bucket-browser/releases/download/v1.2.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "data-gurus.data-cleaner",
+        "name": "Data Cleaner",
+        "author": "Data Gurus",
+        "version": "1.0.0",
+        "description": "A handy tool to perform common data cleaning tasks on CSV and Excel files.",
+        "download_url": "https://github.com/data-gurus/data-cleaner/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "dev-tools.ansible-vault-editor",
+        "name": "Ansible Vault Editor",
+        "author": "DevTools Inc.",
+        "version": "1.1.0",
+        "description": "Securely edit your Ansible vault files without leaving the application.",
+        "download_url": "https://github.com/devtools-inc/ansible-vault-editor/releases/download/v1.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "lang-tools.csharp-runner",
+        "name": "C# Script Runner",
+        "author": "Language Tools",
+        "version": "1.4.2",
+        "description": "Run C# scripts (.csx) and small projects directly from the tool context menu.",
+        "download_url": "https://github.com/lang-tools/csharp-runner/releases/download/v1.4.2/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "db-pros.schema-visualizer",
+        "name": "DB Schema Visualizer",
+        "author": "DB Pros",
+        "version": "1.0.0",
+        "description": "Connect to a database and generate a visual graph of its table schema.",
+        "download_url": "https://github.com/db-pros/schema-visualizer/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "util-masters.base64-encoder",
+        "name": "Base64 Encoder/Decoder",
+        "author": "Util Masters",
+        "version": "1.3.0",
+        "description": "Quickly encode and decode text and files to/from Base64.",
+        "download_url": "https://github.com/util-masters/base64-encoder/releases/download/v1.3.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.svelte-kit",
+        "name": "Svelte Kit",
+        "author": "Web Wizards",
+        "version": "0.8.0",
+        "description": "Code snippets, syntax highlighting, and utilities for Svelte developers.",
+        "download_url": "https://github.com/web-wizards/svelte-kit/releases/download/v0.8.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "api-heroes.websocket-client",
+        "name": "WebSocket Client",
+        "author": "API Heroes",
+        "version": "1.2.0",
+        "description": "A client for testing and debugging WebSocket connections.",
+        "download_url": "https://github.com/api-heroes/websocket-client/releases/download/v1.2.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "prod-boost.pomodoro-timer",
+        "name": "Pomodoro Timer",
+        "author": "Productivity Boost",
+        "version": "1.1.0",
+        "description": "Stay focused with a built-in Pomodoro timer in your status bar.",
+        "download_url": "https://github.com/prod-boost/pomodoro-timer/releases/download/v1.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "data-gurus.parquet-viewer",
+        "name": "Parquet File Viewer",
+        "author": "Data Gurus",
+        "version": "1.0.0",
+        "description": "A simple viewer for Apache Parquet files, showing schema and data samples.",
+        "download_url": "https://github.com/data-gurus/parquet-viewer/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "themes.monokai-pro",
+        "name": "Monokai Pro Theme",
+        "author": "Theme Makers",
+        "version": "1.2.0",
+        "description": "The iconic Monokai Pro theme pack for CodeStation's interface.",
+        "download_url": "https://github.com/theme-makers/monokai-pro/releases/download/v1.2.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "themes.dracula-official",
+        "name": "Dracula Official Theme",
+        "author": "Dracula Theme",
+        "version": "2.22.0",
+        "description": "The famous dark theme for developers. Now available for CodeStation.",
+        "download_url": "https://github.com/dracula-theme/codestation/releases/download/v2.22.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "cloud-ninjas.lambda-runner",
+        "name": "AWS Lambda Runner",
+        "author": "Cloud Ninjas",
+        "version": "1.3.1",
+        "description": "Test and invoke your AWS Lambda functions with custom event payloads.",
+        "download_url": "https://github.com/cloud-ninjas/lambda-runner/releases/download/v1.3.1/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "dev-tools.log-viewer",
+        "name": "Advanced Log Viewer",
+        "author": "DevTools Inc.",
+        "version": "2.1.0",
+        "description": "Provides syntax highlighting and filtering for various log file formats.",
+        "download_url": "https://github.com/devtools-inc/log-viewer/releases/download/v2.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "lang-tools.typescript-linter",
+        "name": "TypeScript Linter",
+        "author": "Language Tools",
+        "version": "2.5.0",
+        "description": "Integrates ESLint for real-time linting of TypeScript files.",
+        "download_url": "https://github.com/lang-tools/typescript-linter/releases/download/v2.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.angular-essentials",
+        "name": "Angular Essentials",
+        "author": "Web Wizards",
+        "version": "14.1.0",
+        "description": "Snippets, schematics integration, and utilities for Angular development.",
+        "download_url": "https://github.com/web-wizards/angular-essentials/releases/download/v14.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "db-pros.sqlite-explorer",
+        "name": "SQLite Explorer",
+        "author": "DB Pros",
+        "version": "1.8.0",
+        "description": "Explore and query SQLite database files (.db, .sqlite) directly.",
+        "download_url": "https://github.com/db-pros/sqlite-explorer/releases/download/v1.8.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "util-masters.jwt-debugger",
+        "name": "JWT Debugger",
+        "author": "Util Masters",
+        "version": "1.1.0",
+        "description": "Decode and verify JSON Web Tokens (JWT) to inspect their payload and signature.",
+        "download_url": "https://github.com/util-masters/jwt-debugger/releases/download/v1.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "git-tools.gitignore-generator",
+        "name": ".gitignore Generator",
+        "author": "Git Tools",
+        "version": "1.5.0",
+        "description": "Generate .gitignore files from a massive collection of templates.",
+        "download_url": "https://github.com/git-tools/gitignore-generator/releases/download/v1.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "prod-boost.code-timer",
+        "name": "Code Time Tracker",
+        "author": "Productivity Boost",
+        "version": "2.0.0",
+        "description": "Automatically track time spent on different tools and projects.",
+        "download_url": "https://github.com/prod-boost/code-timer/releases/download/v2.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "community.project-manager",
+        "name": "Project Manager",
+        "author": "Community",
+        "version": "1.12.0",
+        "description": "Switch between projects and tool groups with ease. Save and load workspaces.",
+        "download_url": "https://github.com/community/project-manager/releases/download/v1.12.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "community.code-spell-checker",
+        "name": "Code Spell Checker",
+        "author": "Community",
+        "version": "2.1.0",
+        "description": "A multilingual spell checker for source code comments and strings.",
+        "download_url": "https://github.com/community/code-spell-checker/releases/download/v2.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.path-intellisense",
+        "name": "Path IntelliSense",
+        "author": "Web Wizards",
+        "version": "2.3.0",
+        "description": "Autocompletes filenames and paths in your scripts and configuration files.",
+        "download_url": "https://github.com/web-wizards/path-intellisense/releases/download/v2.3.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "data-gurus.excel-viewer",
+        "name": "Excel Viewer",
+        "author": "Data Gurus",
+        "version": "1.4.0",
+        "description": "A read-only viewer for Excel files (.xls, .xlsx) with sheet switching.",
+        "download_url": "https://github.com/data-gurus/excel-viewer/releases/download/v1.4.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "cloud-ninjas.cloudformation-linter",
+        "name": "CloudFormation Linter",
+        "author": "Cloud Ninjas",
+        "version": "0.5.0",
+        "description": "Lint and validate AWS CloudFormation templates in JSON or YAML.",
+        "download_url": "https://github.com/cloud-ninjas/cloudformation-linter/releases/download/v0.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "lang-tools.php-cs-fixer",
+        "name": "PHP CS Fixer",
+        "author": "Language Tools",
+        "version": "1.9.0",
+        "description": "Apply coding standards to your PHP code automatically.",
+        "download_url": "https://github.com/lang-tools/php-cs-fixer/releases/download/v1.9.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "dev-tools.hexdump-viewer",
+        "name": "Hexdump Viewer",
+        "author": "DevTools Inc.",
+        "version": "1.1.0",
+        "description": "View files in a hexadecimal representation. Useful for binary analysis.",
+        "download_url": "https://github.com/devtools-inc/hexdump-viewer/releases/download/v1.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "db-pros.firebase-explorer",
+        "name": "Firebase Explorer",
+        "author": "DB Pros",
+        "version": "0.7.0",
+        "description": "Browse your Google Firebase Realtime Database or Firestore data.",
+        "download_url": "https://github.com/db-pros/firebase-explorer/releases/download/v0.7.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "api-heroes.openapi-preview",
+        "name": "OpenAPI (Swagger) Preview",
+        "author": "API Heroes",
+        "version": "3.5.0",
+        "description": "Preview and interact with OpenAPI (formerly Swagger) specifications.",
+        "download_url": "https://github.com/api-heroes/openapi-preview/releases/download/v3.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "util-masters.qrcode-generator",
+        "name": "QR Code Generator",
+        "author": "Util Masters",
+        "version": "1.0.0",
+        "description": "Generate a QR code from selected text or a URL.",
+        "download_url": "https://github.com/util-masters/qrcode-generator/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.css-peek",
+        "name": "CSS Peek",
+        "author": "Web Wizards",
+        "version": "4.2.0",
+        "description": "Peek or jump to CSS ID and class definitions from your HTML files.",
+        "download_url": "https://github.com/web-wizards/css-peek/releases/download/v4.2.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "prod-boost.todo-list-manager",
+        "name": "Todo List Manager",
+        "author": "Productivity Boost",
+        "version": "2.1.0",
+        "description": "A powerful manager for `TODO.md` files with syntax highlighting and filtering.",
+        "download_url": "https://github.com/prod-boost/todo-list-manager/releases/download/v2.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "data-gurus.apache-arrow-viewer",
+        "name": "Apache Arrow Viewer",
+        "author": "Data Gurus",
+        "version": "0.9.0",
+        "description": "View and inspect Apache Arrow format files and streams.",
+        "download_url": "https://github.com/data-gurus/apache-arrow-viewer/releases/download/v0.9.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "lang-tools.lua-language-server",
+        "name": "Lua Language Server",
+        "author": "Language Tools",
+        "version": "2.6.0",
+        "description": "Provides full language server protocol support for the Lua language.",
+        "download_url": "https://github.com/lang-tools/lua-language-server/releases/download/v2.6.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "cloud-ninjas.digitalocean-manager",
+        "name": "DigitalOcean Manager",
+        "author": "Cloud Ninjas",
+        "version": "1.1.0",
+        "description": "Manage your DigitalOcean Droplets, volumes, and firewalls.",
+        "download_url": "https://github.com/cloud-ninjas/digitalocean-manager/releases/download/v1.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "dev-tools.shell-script-runner",
+        "name": "Shell Script Runner",
+        "author": "DevTools Inc.",
+        "version": "1.5.0",
+        "description": "Run shell scripts (.sh, .bat, .ps1) and see the output in the console.",
+        "download_url": "https://github.com/devtools-inc/shell-script-runner/releases/download/v1.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "community.bookmarks",
+        "name": "Bookmarks",
+        "author": "Community",
+        "version": "1.0.0",
+        "description": "Bookmark lines in your code and jump between them easily.",
+        "download_url": "https://github.com/community/bookmarks/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "themes.solarized-pack",
+        "name": "Solarized Theme Pack",
+        "author": "Theme Makers",
+        "version": "1.5.0",
+        "description": "The classic Solarized Light and Dark themes for CodeStation.",
+        "download_url": "https://github.com/theme-makers/solarized-pack/releases/download/v1.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "util-masters.file-tree-generator",
+        "name": "File Tree Generator",
+        "author": "Util Masters",
+        "version": "1.2.0",
+        "description": "Generate a text-based tree representation of a directory structure.",
+        "download_url": "https://github.com/util-masters/file-tree-generator/releases/download/v1.2.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "db-pros.cassandra-client",
+        "name": "Cassandra Client",
+        "author": "DB Pros",
+        "version": "0.8.0",
+        "description": "A basic client for running CQL queries against an Apache Cassandra cluster.",
+        "download_url": "https://github.com/db-pros/cassandra-client/releases/download/v0.8.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.npm-dependency-checker",
+        "name": "NPM Dependency Checker",
+        "author": "Web Wizards",
+        "version": "1.6.0",
+        "description": "Check for outdated or vulnerable dependencies in your package.json.",
+        "download_url": "https://github.com/web-wizards/npm-dependency-checker/releases/download/v1.6.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "api-heroes.grpc-client",
+        "name": "gRPC Client",
+        "author": "API Heroes",
+        "version": "0.9.0",
+        "description": "A GUI client for interacting with gRPC services. Requires .proto files.",
+        "download_url": "https://github.com/api-heroes/grpc-client/releases/download/v0.9.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "git-tools.git-history-viewer",
+        "name": "Git History Viewer",
+        "author": "Git Tools",
+        "version": "0.6.0",
+        "description": "View and search the Git history of a file or the entire repository.",
+        "download_url": "https://github.com/git-tools/git-history-viewer/releases/download/v0.6.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "data-gurus.model-trainer",
+        "name": "Simple Model Trainer",
+        "author": "Data Gurus",
+        "version": "1.0.0",
+        "description": "A GUI wrapper for training simple scikit-learn models on your datasets.",
+        "download_url": "https://github.com/data-gurus/model-trainer/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "prod-boost.snippet-manager",
+        "name": "Snippet Manager",
+        "author": "Productivity Boost",
+        "version": "2.2.0",
+        "description": "Create, manage, and insert your personal code snippets across all tools.",
+        "download_url": "https://github.com/prod-boost/snippet-manager/releases/download/v2.2.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "lang-tools.powershell-runner",
+        "name": "PowerShell Runner",
+        "author": "Language Tools",
+        "version": "1.3.0",
+        "description": "Enhanced support for running and debugging PowerShell (.ps1) scripts.",
+        "download_url": "https://github.com/lang-tools/powershell-runner/releases/download/v1.3.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "dev-tools.makefile-runner",
+        "name": "Makefile Runner",
+        "author": "DevTools Inc.",
+        "version": "1.1.0",
+        "description": "Provides syntax highlighting and a command palette to run Makefile targets.",
+        "download_url": "https://github.com/devtools-inc/makefile-runner/releases/download/v1.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "cloud-ninjas.heroku-cli-wrapper",
+        "name": "Heroku CLI Wrapper",
+        "author": "Cloud Ninjas",
+        "version": "1.4.0",
+        "description": "A GUI wrapper for common Heroku CLI commands like deploy, logs, and run.",
+        "download_url": "https://github.com/cloud-ninjas/heroku-cli-wrapper/releases/download/v1.4.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "community.filesize-viewer",
+        "name": "Filesize Viewer",
+        "author": "Community",
+        "version": "1.1.0",
+        "description": "Shows the size of the current file in the status bar.",
+        "download_url": "https://github.com/community/filesize-viewer/releases/download/v1.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.dart-essentials",
+        "name": "Dart & Flutter Essentials",
+        "author": "Web Wizards",
+        "version": "3.80.0",
+        "description": "Syntax highlighting, code completion, and formatting for Dart and Flutter.",
+        "download_url": "https://github.com/web-wizards/dart-essentials/releases/download/v3.80.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "db-pros.kafka-client",
+        "name": "Kafka Topic Explorer",
+        "author": "DB Pros",
+        "version": "0.6.0",
+        "description": "Connect to an Apache Kafka cluster to browse topics and view messages.",
+        "download_url": "https://github.com/db-pros/kafka-client/releases/download/v0.6.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "themes.one-dark-pro",
+        "name": "One Dark Pro Theme",
+        "author": "Theme Makers",
+        "version": "3.9.0",
+        "description": "Atom's iconic One Dark theme, now for CodeStation.",
+        "download_url": "https://github.com/theme-makers/one-dark-pro/releases/download/v3.9.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "util-masters.cron-validator",
+        "name": "Cron Job Validator",
+        "author": "Util Masters",
+        "version": "1.0.0",
+        "description": "Validate cron expressions and see the next scheduled run times.",
+        "download_url": "https://github.com/util-masters/cron-validator/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "data-gurus.hdf5-viewer",
+        "name": "HDF5 Viewer",
+        "author": "Data Gurus",
+        "version": "0.5.0",
+        "description": "A viewer for HDF5 files, allowing you to explore groups and datasets.",
+        "download_url": "https://github.com/data-gurus/hdf5-viewer/releases/download/v0.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "lang-tools.ruby-linter",
+        "name": "Ruby Linter (RuboCop)",
+        "author": "Language Tools",
+        "version": "1.15.0",
+        "description": "Integrates RuboCop to provide real-time linting for your Ruby files.",
+        "download_url": "https://github.com/lang-tools/ruby-linter/releases/download/v1.15.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "prod-boost.music-player",
+        "name": "Music Player Control",
+        "author": "Productivity Boost",
+        "version": "1.2.0",
+        "description": "Control Spotify or Apple Music from the CodeStation status bar.",
+        "download_url": "https://github.com/prod-boost/music-player/releases/download/v1.2.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "api-heroes.env-file-highlighter",
+        "name": ".env File Highlighter",
+        "author": "API Heroes",
+        "version": "1.0.0",
+        "description": "Provides syntax highlighting for environment variable (.env) files.",
+        "download_url": "https://github.com/api-heroes/env-file-highlighter/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "dev-tools.cmake-tools",
+        "name": "CMake Tools Helper",
+        "author": "DevTools Inc.",
+        "version": "1.10.0",
+        "description": "Linting and command integration for CMakeLists.txt files.",
+        "download_url": "https://github.com/devtools-inc/cmake-tools/releases/download/v1.10.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "community.file-comparator",
+        "name": "File Comparator",
+        "author": "Community",
+        "version": "1.3.0",
+        "description": "Select two files and see a visual diff of their contents.",
+        "download_url": "https://github.com/community/file-comparator/releases/download/v1.3.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "cloud-ninjas.serverless-framework-tools",
+        "name": "Serverless Framework Tools",
+        "author": "Cloud Ninjas",
+        "version": "2.1.0",
+        "description": "Utilities for working with the Serverless Framework (serverless.yml).",
+        "download_url": "https://github.com/cloud-ninjas/serverless-framework-tools/releases/download/v2.1.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "web-wizards.sass-linter",
+        "name": "Sass Linter",
+        "author": "Web Wizards",
+        "version": "1.12.0",
+        "description": "Real-time linting for Sass (.scss, .sass) files using stylelint.",
+        "download_url": "https://github.com/web-wizards/sass-linter/releases/download/v1.12.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "lang-tools.kotlin-runner",
+        "name": "Kotlin Runner",
+        "author": "Language Tools",
+        "version": "0.9.0",
+        "description": "Run Kotlin scripts and projects with a simple context menu command.",
+        "download_url": "https://github.com/lang-tools/kotlin-runner/releases/download/v0.9.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "util-masters.port-scanner",
+        "name": "Local Port Scanner",
+        "author": "Util Masters",
+        "version": "1.0.0",
+        "description": "Scan your localhost for open ports and the processes using them.",
+        "download_url": "https://github.com/util-masters/port-scanner/releases/download/v1.0.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "themes.nord-theme",
+        "name": "Nord Theme",
+        "author": "Theme Makers",
+        "version": "0.20.0",
+        "description": "An arctic, north-bluish clean and elegant theme for CodeStation.",
+        "download_url": "https://github.com/theme-makers/nord-theme/releases/download/v0.20.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    },
+    {
+        "id": "db-pros.influxdb-client",
+        "name": "InfluxDB Client",
+        "author": "DB Pros",
+        "version": "0.5.0",
+        "description": "A client for executing Flux or InfluxQL queries against InfluxDB.",
+        "download_url": "https://github.com/db-pros/influxdb-client/releases/download/v0.5.0/plugin.zip",
+        "icon_url": "",
+        "type": "tool_action"
+    }
 ]
